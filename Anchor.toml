@@ -1,0 +1,17 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+eventonese = "C2V33PChTC4TMVQMNS9NGKD3HVxhqoUSLbX2MtAaih2R"
+program_b = "4oXvagDQG11aajdFticQwyBCCoWnqpiEaVSPXKK1igsT"
+program_c = "CiKq5LvLJYpGsntqvPMmKefPTJtJ2UcF97pECXchvhTD"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "/Users/noahgundotra/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
